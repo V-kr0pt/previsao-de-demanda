@@ -1,14 +1,9 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
 
 import pandas as pd
 import datetime as dt
 import matplotlib.pyplot as plt
-import matplotlib.dates as mpl_dates
+#import matplotlib.dates as mpl_dates
 
 path = '/home/kr0pt/Documents/Pesquisa/Codes/Dados/Dados_JPS_12B1(01_01_2008-0h0m--31_12_2013-23h45m).csv'
 df_bruto = pd.read_csv(path, sep=';')
@@ -90,7 +85,7 @@ plt.style.use('seaborn')
 
 plt.plot(df_maxpot_dia['Dia'], df_maxpot_dia['Potencia Maxima']) 
 
-plt.xlim(df_maxpot_dia['Dia'][0], df_maxpot_dia['Dia'][dfdf_maxpot_dia['Dia'].index[-1]])
+plt.xlim(df_maxpot_dia['Dia'][0], df_maxpot_dia['Dia'][df_maxpot_dia['Dia'].index[-1]])
 
 plt.title('Potência máxima diária')
 plt.xlabel('dias')
