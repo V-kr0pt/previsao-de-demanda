@@ -111,4 +111,11 @@ df_vento_13 = df_vento.loc[df_vento.index.year == 2013]
 #Radiação Solar
 df_rads = df['RADIACAO GLOBAL(Kj/m²)'].resample('D').max()
 
-#dividindo os dados do vento por anos
+#dividindo os dados da radiação solar por anos
+
+df_rads_08 = df_rads.loc[df_rads.index.year == 2008]
+df_rads_09 = df_rads.loc[df_rads.index.year == 2009]
+df_rads_10 = df_rads.loc[df_rads.index.year == 2010]
+df_rads_11 = df_rads.loc[df_rads.index.year == 2011]
+df_rads_12 = df_rads.loc[df_rads.index.year == 2012]
+df_rads_13 = df_rads.loc[df_rads.index.year == 2013]
