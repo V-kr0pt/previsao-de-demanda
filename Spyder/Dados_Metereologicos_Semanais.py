@@ -113,7 +113,36 @@ df_vento = pd.DataFrame(columns=
 df_vento['VENTO, RAJADA MAXIMA SEMANAL (m/s)'] =\
     df['VENTO, RAJADA MAXIMA DIARIA (AUT)(m/s)'].resample('W-SUN').max()
 
+#Velocidade média semanal será a média das velocidades médias diárias
 df_vento['VENTO, VELOCIDADE MEDIA SEMANAL (m/s)'] =\
     df['VENTO, VELOCIDADE MEDIA DIARIA (AUT)(m/s)'].resample('W-SUN').mean()
 
+
+
+# -- Divisão dos dataframes semanais para cada ano --
+
+#dividindo os dados da temperatura por anos
+df_temp_08 = df_temp.loc[df_temp.index.year == 2008]
+df_temp_09 = df_temp.loc[df_temp.index.year == 2009]
+df_temp_10 = df_temp.loc[df_temp.index.year == 2010]
+df_temp_11 = df_temp.loc[df_temp.index.year == 2011]
+df_temp_12 = df_temp.loc[df_temp.index.year == 2012]
+df_temp_13 = df_temp.loc[df_temp.index.year == 2013]
+
+#dividindo os dados da chuva por anos
+df_chuva_08 = df_chuva.loc[df_chuva.index.year == 2008]
+df_chuva_09 = df_chuva.loc[df_chuva.index.year == 2009]
+df_chuva_10 = df_chuva.loc[df_chuva.index.year == 2010]
+df_chuva_11 = df_chuva.loc[df_chuva.index.year == 2011]
+df_chuva_12 = df_chuva.loc[df_chuva.index.year == 2012]
+df_chuva_13 = df_chuva.loc[df_chuva.index.year == 2013]
+
+
+#dividindo os dados do vento por anos
+df_vento_08 = df_vento.loc[df_vento.index.year == 2008]
+df_vento_09 = df_vento.loc[df_vento.index.year == 2009]
+df_vento_10 = df_vento.loc[df_vento.index.year == 2010]
+df_vento_11 = df_vento.loc[df_vento.index.year == 2011]
+df_vento_12 = df_vento.loc[df_vento.index.year == 2012]
+df_vento_13 = df_vento.loc[df_vento.index.year == 2013]
    
