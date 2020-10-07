@@ -89,6 +89,14 @@ df_temp_13 = df_temp.loc[df_temp.index.year == 2013]
 # Chuvas
 df_chuva = df['PRECIPITACAO TOTAL, HORARIO(mm)'].resample('D').max()
 
+#dividindo a chuva por anos
+df_chuva_08 = df_chuva.loc[df_chuva.index.year == 2008]
+df_chuva_09 = df_chuva.loc[df_chuva.index.year == 2009]
+df_chuva_10 = df_chuva.loc[df_chuva.index.year == 2010]
+df_chuva_11 = df_chuva.loc[df_chuva.index.year == 2011]
+df_chuva_12 = df_chuva.loc[df_chuva.index.year == 2012]
+df_chuva_13 = df_chuva.loc[df_chuva.index.year == 2013]
+
 #Vento
 df_vento = df[['VENTO, DIRECAO HORARIA (gr)(° (gr))', 'VENTO, RAJADA MAXIMA(m/s)', 'VENTO, VELOCIDADE HORARIA(m/s)' ]].resample('D').max()
 
