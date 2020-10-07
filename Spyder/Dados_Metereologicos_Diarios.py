@@ -74,6 +74,13 @@ df['VENTO, VELOCIDADE HORARIA(m/s)' ] = df['VENTO, VELOCIDADE HORARIA(m/s)'].str
 
 
 # Temperatura
-df_temp = df.resample('D').max()
+df_temp = df['TEMPERATURA DO AR - BULBO SECO, HORARIA(°C)'].resample('D').max()
 
+# Chuvas
+df_chuva = df['PRECIPITACAO TOTAL, HORARIO(mm)'].resample('D').max()
 
+#Vento
+df_vento = df[['VENTO, DIRECAO HORARIA (gr)(° (gr))', 'VENTO, RAJADA MAXIMA(m/s)', 'VENTO, VELOCIDADE HORARIA(m/s)' ]].resample('D').max()
+
+#Radiação Solar
+df_rads = df['RADIACAO GLOBAL(Kj/m²)'].resample('D').max()
