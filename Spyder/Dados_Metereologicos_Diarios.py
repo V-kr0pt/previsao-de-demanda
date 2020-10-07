@@ -66,11 +66,18 @@ df.set_index('Data Medicao', inplace=True)
 
 #transformando os dados de string para float
 
-df['PRECIPITACAO TOTAL, HORARIO(mm)'] = df['PRECIPITACAO TOTAL, HORARIO(mm)'].str.replace(',','.').astype(float)
-df['RADIACAO GLOBAL(Kj/m²)'] = df['RADIACAO GLOBAL(Kj/m²)'].str.replace(',','.').astype(float)
-df['TEMPERATURA DO AR - BULBO SECO, HORARIA(°C)'] = df['TEMPERATURA DO AR - BULBO SECO, HORARIA(°C)'].str.replace(',','.').astype(float)
-df['VENTO, RAJADA MAXIMA(m/s)'] = df['VENTO, RAJADA MAXIMA(m/s)'].str.replace(',','.').astype(float)
-df['VENTO, VELOCIDADE HORARIA(m/s)' ] = df['VENTO, VELOCIDADE HORARIA(m/s)'].str.replace(',','.').astype(float)
+df['PRECIPITACAO TOTAL, HORARIO(mm)'] = \
+    df['PRECIPITACAO TOTAL, HORARIO(mm)'].str.replace(',','.').astype(float)
+
+df['RADIACAO GLOBAL(Kj/m²)'] = \
+    df['RADIACAO GLOBAL(Kj/m²)'].str.replace(',','.').astype(float)
+
+df['TEMPERATURA DO AR - BULBO SECO, HORARIA(°C)'] =\
+    df['TEMPERATURA DO AR - BULBO SECO, HORARIA(°C)'].str.replace(',','.').astype(float)
+df['VENTO, RAJADA MAXIMA(m/s)'] = \
+    df['VENTO, RAJADA MAXIMA(m/s)'].str.replace(',','.').astype(float)
+df['VENTO, VELOCIDADE HORARIA(m/s)' ] =\
+    df['VENTO, VELOCIDADE HORARIA(m/s)'].str.replace(',','.').astype(float)
 
 
 # Temperatura
@@ -98,7 +105,9 @@ df_chuva_12 = df_chuva.loc[df_chuva.index.year == 2012]
 df_chuva_13 = df_chuva.loc[df_chuva.index.year == 2013]
 
 #Vento
-df_vento = df[['VENTO, DIRECAO HORARIA (gr)(° (gr))', 'VENTO, RAJADA MAXIMA(m/s)', 'VENTO, VELOCIDADE HORARIA(m/s)' ]].resample('D').max()
+df_vento = df[['VENTO, DIRECAO HORARIA (gr)(° (gr))', 
+               'VENTO, RAJADA MAXIMA(m/s)', 
+               'VENTO, VELOCIDADE HORARIA(m/s)' ]].resample('D').max()
 
 #dividindo os dados do vento por anos
 df_vento_08 = df_vento.loc[df_vento.index.year == 2008]
