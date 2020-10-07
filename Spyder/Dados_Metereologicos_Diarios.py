@@ -76,11 +76,46 @@ df['VENTO, VELOCIDADE HORARIA(m/s)' ] = df['VENTO, VELOCIDADE HORARIA(m/s)'].str
 # Temperatura
 df_temp = df['TEMPERATURA DO AR - BULBO SECO, HORARIA(°C)'].resample('D').max()
 
+#dividindo os dados da temperatura por anos
+df_temp_08 = df_temp.loc[df_temp.index.year == 2008]
+df_temp_09 = df_temp.loc[df_temp.index.year == 2009]
+df_temp_10 = df_temp.loc[df_temp.index.year == 2010]
+df_temp_11 = df_temp.loc[df_temp.index.year == 2011]
+df_temp_12 = df_temp.loc[df_temp.index.year == 2012]
+df_temp_13 = df_temp.loc[df_temp.index.year == 2013]
+
+
+
 # Chuvas
 df_chuva = df['PRECIPITACAO TOTAL, HORARIO(mm)'].resample('D').max()
+
+#dividindo os dados da chuva por anos
+df_chuva_08 = df_chuva.loc[df_chuva.index.year == 2008]
+df_chuva_09 = df_chuva.loc[df_chuva.index.year == 2009]
+df_chuva_10 = df_chuva.loc[df_chuva.index.year == 2010]
+df_chuva_11 = df_chuva.loc[df_chuva.index.year == 2011]
+df_chuva_12 = df_chuva.loc[df_chuva.index.year == 2012]
+df_chuva_13 = df_chuva.loc[df_chuva.index.year == 2013]
 
 #Vento
 df_vento = df[['VENTO, DIRECAO HORARIA (gr)(° (gr))', 'VENTO, RAJADA MAXIMA(m/s)', 'VENTO, VELOCIDADE HORARIA(m/s)' ]].resample('D').max()
 
+#dividindo os dados do vento por anos
+df_vento_08 = df_vento.loc[df_vento.index.year == 2008]
+df_vento_09 = df_vento.loc[df_vento.index.year == 2009]
+df_vento_10 = df_vento.loc[df_vento.index.year == 2010]
+df_vento_11 = df_vento.loc[df_vento.index.year == 2011]
+df_vento_12 = df_vento.loc[df_vento.index.year == 2012]
+df_vento_13 = df_vento.loc[df_vento.index.year == 2013]
+
 #Radiação Solar
 df_rads = df['RADIACAO GLOBAL(Kj/m²)'].resample('D').max()
+
+#dividindo os dados da radiação solar por anos
+
+df_rads_08 = df_rads.loc[df_rads.index.year == 2008]
+df_rads_09 = df_rads.loc[df_rads.index.year == 2009]
+df_rads_10 = df_rads.loc[df_rads.index.year == 2010]
+df_rads_11 = df_rads.loc[df_rads.index.year == 2011]
+df_rads_12 = df_rads.loc[df_rads.index.year == 2012]
+df_rads_13 = df_rads.loc[df_rads.index.year == 2013]
