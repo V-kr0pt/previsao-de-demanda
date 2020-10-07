@@ -15,7 +15,7 @@ O caminho para alcançar o objetivo será feito da seguinte forma:
     
     - Construir um dataframe com as colunas que representam as variáveis 
       desejadas;  
-    - Dividir em dataframes para cada variável contendo os máximos semanais;
+    - Dividir em dataframes para cada variável contendo os dados semanais;
     - Dividir os dataframes de máx. semanal por ano.
 
 @author: kr0pt
@@ -33,6 +33,7 @@ df = pd.read_csv(path, ';',
                  ['Data Medicao',
                   'PRECIPITACAO TOTAL, DIARIO (AUT)(mm)',
                   'TEMPERATURA MEDIA, DIARIA (AUT)(°C)',
+                  'TEMPERATURA MAXIMA, DIARIA (AUT)(°C)',
                   'TEMPERATURA MINIMA, DIARIA (AUT)(°C)',
                   'VENTO, RAJADA MAXIMA DIARIA (AUT)(m/s)',
                   'VENTO, VELOCIDADE MEDIA DIARIA (AUT)(m/s)' ]
@@ -50,6 +51,9 @@ df.set_index('Data Medicao', inplace=True)
 df['PRECIPITACAO TOTAL, DIARIO (AUT)(mm)'] =\
     df['PRECIPITACAO TOTAL, DIARIO (AUT)(mm)'].str.replace(',','.').astype(float)
 
+df['TEMPERATURA MAXIMA, DIARIA (AUT)(°C)'] =\
+    df['TEMPERATURA MAXIMA, DIARIA (AUT)(°C)'].str.replace(',','.').astype(float)
+
 df['TEMPERATURA MEDIA, DIARIA (AUT)(°C)'] =\
     df['TEMPERATURA MEDIA, DIARIA (AUT)(°C)'].str.replace(',','.').astype(float)
     
@@ -63,6 +67,53 @@ df[ 'VENTO, VELOCIDADE MEDIA DIARIA (AUT)(m/s)'] =\
     df[ 'VENTO, VELOCIDADE MEDIA DIARIA (AUT)(m/s)'].str.replace(',','.').astype(float)
     
     
-# -- Divisão em dataframes para cada variável contendo os máximos semanais --   
+# -- Divisão em dataframes para cada variável contendo os dados semanais --   
+
+# - Temperatura -
+
+#Criando o dataframe das temperaturas com as colunas desejadas
+df_temp = pd.DataFrame(columns = 
+                       ['TEMPERATURA MEDIA SEMANAL (°C)',
+                        'TEMPERATURA MAXIMA SEMANAL (°C)',
+                        'TEMPERATURA MINIMA SEMANAL (°C)' ] 
+                       )
+
+#Coluna média semanal é a média das temperaturas médias diárias
+df_temp['TEMPERATURA MEDIA SEMANAL (°C)']=\
+    df['TEMPERATURA MEDIA, DIARIA (AUT)(°C)'].resample('W-SUN').mean()
+
+#Coluna máxima semanal é o valor máximo das temperaturas máximas diárias    
+df_temp['TEMPERATURA MAXIMA SEMANAL (°C)']=\
+    df['TEMPERATURA MAXIMA, DIARIA (AUT)(°C)'].resample('W-SUN').max()
     
-    
+#Coluna mínima semanal é o valor mínimo das temperaturas mínimas diárias 
+df_temp['TEMPERATURA MINIMA SEMANAL (°C)']=\
+    df['TEMPERATURA MINIMA, DIARIA (AUT)(°C)'].resample('W-SUN').max()
+
+
+# - Chuva -
+
+#Criando o dataframe dos dados de precipitação total
+df_chuva = pd.DataFrame(columns=['PRECIPITACAO TOTAL, SEMANAL (mm)'])
+
+#Coluna precipitação semanal é a soma das precipitações diárias
+df_chuva['PRECIPITACAO TOTAL, SEMANAL (mm)'] =\
+    df['PRECIPITACAO TOTAL, DIARIO (AUT)(mm)'].resample('W-SUN').sum()
+
+
+# - Vento -
+
+#Criando o dataframe dos dados do vento
+df_vento = pd.DataFrame(columns=
+                        ['VENTO, RAJADA MAXIMA SEMANAL (m/s)',
+                         'VENTO, VELOCIDADE MEDIA SEMANAL (m/s)']
+                        )
+
+#Rajada Max. Semanal será o valor máximo das rajadas diárias
+df_vento['VENTO, RAJADA MAXIMA SEMANAL (m/s)'] =\
+    df['VENTO, RAJADA MAXIMA DIARIA (AUT)(m/s)'].resample('W-SUN').max()
+
+df_vento['VENTO, VELOCIDADE MEDIA SEMANAL (m/s)'] =\
+    df['VENTO, VELOCIDADE MEDIA DIARIA (AUT)(m/s)'].resample('W-SUN').mean()
+
+   
