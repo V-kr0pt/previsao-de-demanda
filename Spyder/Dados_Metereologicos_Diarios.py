@@ -64,7 +64,16 @@ df['Data Medicao'] = pd.to_datetime(df['Data Medicao'])
 df.set_index('Data Medicao', inplace=True)
 
 
-# Temperatura
+#transformando os dados de string para float
 
- 
+df['PRECIPITACAO TOTAL, HORARIO(mm)'] = df['PRECIPITACAO TOTAL, HORARIO(mm)'].str.replace(',','.').astype(float)
+df['RADIACAO GLOBAL(Kj/m²)'] = df['RADIACAO GLOBAL(Kj/m²)'].str.replace(',','.').astype(float)
+df['TEMPERATURA DO AR - BULBO SECO, HORARIA(°C)'] = df['TEMPERATURA DO AR - BULBO SECO, HORARIA(°C)'].str.replace(',','.').astype(float)
+df['VENTO, RAJADA MAXIMA(m/s)'] = df['VENTO, RAJADA MAXIMA(m/s)'].str.replace(',','.').astype(float)
+df['VENTO, VELOCIDADE HORARIA(m/s)' ] = df['VENTO, VELOCIDADE HORARIA(m/s)'].str.replace(',','.').astype(float)
+
+
+# Temperatura
+df_temp = df.resample('D').max()
+
 
