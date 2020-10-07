@@ -76,6 +76,16 @@ df['VENTO, VELOCIDADE HORARIA(m/s)' ] = df['VENTO, VELOCIDADE HORARIA(m/s)'].str
 # Temperatura
 df_temp = df['TEMPERATURA DO AR - BULBO SECO, HORARIA(°C)'].resample('D').max()
 
+#dividindo a temperatura por anos
+df_temp_08 = df_temp.loc[df_temp.index.year == 2008]
+df_temp_09 = df_temp.loc[df_temp.index.year == 2009]
+df_temp_10 = df_temp.loc[df_temp.index.year == 2010]
+df_temp_11 = df_temp.loc[df_temp.index.year == 2011]
+df_temp_12 = df_temp.loc[df_temp.index.year == 2012]
+df_temp_13 = df_temp.loc[df_temp.index.year == 2013]
+
+
+
 # Chuvas
 df_chuva = df['PRECIPITACAO TOTAL, HORARIO(mm)'].resample('D').max()
 
