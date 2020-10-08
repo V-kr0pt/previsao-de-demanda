@@ -22,7 +22,7 @@ O caminho para alcançar o objetivo será feito da seguinte forma:
 """
 
 import pandas as pd
-
+import matplotlib.pyplot as plt
 
 # -- Construção de um dataframe com as colunas que representam as variáveis --
 
@@ -70,6 +70,8 @@ df[ 'VENTO, VELOCIDADE MEDIA DIARIA (AUT)(m/s)'] =\
     df[ 'VENTO, VELOCIDADE MEDIA DIARIA (AUT)(m/s)'].str.replace(',','.').astype(float)
     
     
+
+
 # -- Divisão em dataframes para cada variável contendo os dados semanais --   
 
 # - Temperatura -
@@ -175,5 +177,96 @@ df_vento_10.reset_index(inplace=True, drop=True)
 df_vento_11.reset_index(inplace=True, drop=True)
 df_vento_12.reset_index(inplace=True, drop=True)
 df_vento_13.reset_index(inplace=True, drop=True)
+
+
+# -- Gráficos por variável --
+
+#plotar gráficos temperatura:
+    
+fig1, f1_axes = plt.subplots(ncols=2, nrows=3, constrained_layout=True)
+
+fig1.suptitle('Temperaturas dos anos ao longo das semanas',size=17)
+
+f1_axes[0,0].plot(df_temp_08)
+f1_axes[0,0].set_title('Ano de 2008')
+
+f1_axes[0,1].plot(df_temp_09)
+f1_axes[0,1].set_title('Ano de 2009')
+
+f1_axes[1,0].plot(df_temp_10)
+f1_axes[1,0].set_title('Ano de 2010')
+           
+f1_axes[1,1].plot(df_temp_11)
+f1_axes[1,1].set_title('Ano de 2011')
+
+f1_axes[2,0].plot(df_temp_12)
+f1_axes[2,0].set_title('Ano de 2012')
+
+f1_axes[2,1].plot(df_temp_13)
+f1_axes[2,1].set_title('Ano de 2013')
+
+
+
+#plotar gráficos chuva:
+fig2, f2_axes = plt.subplots(nrows=3, ncols=2, constrained_layout=True)
+
+fig2.suptitle('Chuvas dos anos ao longo das semanas',size=17)
+
+f2_axes[0,0].plot(df_chuva_08)
+f2_axes[0,0].set_title('Ano de 2008')
+
+f2_axes[0,1].plot(df_chuva_09)
+f2_axes[0,1].set_title('Ano de 2009')
+
+f2_axes[1,0].plot(df_chuva_10)
+f2_axes[1,0].set_title('Ano de 2010')
+           
+f2_axes[1,1].plot(df_chuva_11)
+f2_axes[1,1].set_title('Ano de 2011')
+
+f2_axes[2,0].plot(df_chuva_12)
+f2_axes[2,0].set_title('Ano de 2012')
+
+f2_axes[2,1].plot(df_chuva_13)
+f2_axes[2,1].set_title('Ano de 2013')
+
+
+#plotar gráficos vento:
+
+fig3, f3_axes = plt.subplots(nrows=3, ncols=2, constrained_layout=True)
+
+fig3.suptitle('Velocidade dos ventos nos anos ao longo das semanas',size=17)
+
+f3_axes[0,0].plot(df_vento_08)
+f3_axes[0,0].set_title('Ano de 2008')
+
+f3_axes[0,1].plot(df_vento_09)
+f3_axes[0,1].set_title('Ano de 2009')
+
+f3_axes[1,0].plot(df_vento_10)
+f3_axes[1,0].set_title('Ano de 2010')
+           
+f3_axes[1,1].plot(df_vento_11)
+f3_axes[1,1].set_title('Ano de 2011')
+
+f3_axes[2,0].plot(df_vento_12)
+f3_axes[2,0].set_title('Ano de 2012')
+
+f3_axes[2,1].plot(df_vento_13)
+f3_axes[2,1].set_title('Ano de 2013')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
