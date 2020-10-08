@@ -41,9 +41,12 @@ df = pd.read_csv(path, ';',
                  )
 
 #transformando a coluna Data Medicao para o formato Datetime
-df['Data Medicao'] = pd.to_datetime(df['Data Medicao']) 
+
+df['Data Medicao'] = pd.to_datetime(df['Data Medicao'])
+
 
 #transformando a coluna Data Medicao em índices
+
 df.set_index('Data Medicao', inplace=True)
 
 #transformando os dados numéricos de str para float
@@ -149,28 +152,28 @@ df_vento_13 = df_vento.loc[df_vento.index.year == 2013]
 # -- Transformando os índices semanais de cada ano --
 
 #Temperatura
-df_temp_08.reset_index(inplace=True)
-df_temp_09.reset_index(inplace=True)
-df_temp_10.reset_index(inplace=True) 
-df_temp_11.reset_index(inplace=True)
-df_temp_12.reset_index(inplace=True)
-df_temp_13.reset_index(inplace=True)
+df_temp_08.reset_index(inplace=True, drop=True)
+df_temp_09.reset_index(inplace=True, drop=True)
+df_temp_10.reset_index(inplace=True, drop=True) 
+df_temp_11.reset_index(inplace=True, drop=True)
+df_temp_12.reset_index(inplace=True, drop=True)
+df_temp_13.reset_index(inplace=True, drop=True)
 
 #Chuva
-df_chuva_08.reset_index(inplace=True)
-df_chuva_09.reset_index(inplace=True) 
-df_chuva_10.reset_index(inplace=True)
-df_chuva_11.reset_index(inplace=True)
-df_chuva_12.reset_index(inplace=True)
-df_chuva_13.reset_index(inplace=True)
+df_chuva_08.reset_index(inplace=True, drop=True)
+df_chuva_09.reset_index(inplace=True, drop=True) 
+df_chuva_10.reset_index(inplace=True, drop=True)
+df_chuva_11.reset_index(inplace=True, drop=True)
+df_chuva_12.reset_index(inplace=True, drop=True)
+df_chuva_13.reset_index(inplace=True, drop=True)
 
 #Vento
 
-df_vento_08.reset_index(inplace=True)
-df_vento_09.reset_index(inplace=True)
-df_vento_10.reset_index(inplace=True)
-df_vento_11.reset_index(inplace=True)
-df_vento_12.reset_index(inplace=True)
-df_vento_13.reset_index(inplace=True)
+df_vento_08.reset_index(inplace=True, drop=True)
+df_vento_09.reset_index(inplace=True, drop=True)
+df_vento_10.reset_index(inplace=True, drop=True)
+df_vento_11.reset_index(inplace=True, drop=True)
+df_vento_12.reset_index(inplace=True, drop=True)
+df_vento_13.reset_index(inplace=True, drop=True)
 
 
