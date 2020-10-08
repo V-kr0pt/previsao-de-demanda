@@ -213,7 +213,11 @@ f1_axes[2,1].set_title('Ano de 2013')
 
 
 
+<<<<<<< HEAD
 #Gráfico das chuvas
+=======
+#plotar gráficos chuva:
+>>>>>>> met_data
 fig2, f2_axes = plt.subplots(nrows=3, ncols=2, constrained_layout=True)
 
 fig2.suptitle('Chuvas dos anos ao longo das semanas',size=17)
@@ -237,8 +241,13 @@ f2_axes[2,1].plot(df_chuva_13)
 f2_axes[2,1].set_title('Ano de 2013')
 
 
+<<<<<<< HEAD
 
 #Gráficos da velocidade do vento
+=======
+#plotar gráficos vento:
+
+>>>>>>> met_data
 fig3, f3_axes = plt.subplots(nrows=3, ncols=2, constrained_layout=True)
 
 fig3.suptitle('Velocidade dos ventos nos anos ao longo das semanas',size=17)
