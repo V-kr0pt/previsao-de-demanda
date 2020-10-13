@@ -51,10 +51,18 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 - Variáveis dos Dados Horários	
 
-######   ![var_dados_horarios](./imagensdoreadme/var_dados_horarios.png)
+######   <img src="./imagensdoreadme/var_dados_horarios.png" alt="var_dados_horarios" style="zoom:80%;" />
+
+​	Pode-se ver uma ampla quantidade de variáveis coletadas nos Dados Horários, inclusive a Radiação Global (Radiação Solar) 
 
 
 
 - Variáveis dos Dados Diários 
 
-###### <img src="./imagensdoreadme/var_dados_diarios.png" alt="var_dados_diarios"  />
+###### <img src="./imagensdoreadme/var_dados_diarios.png" alt="var_dados_diarios" style="zoom:80%;" />
+
+
+
+​	Quanto as variáveis dos Dados Diários conseguimos perceber que algumas das variáveis presentes nos Dados Horários não estão presentes. 
+
+​	Em ambos foi marcado a opção de selecionar todas as variáveis para download, assim os dados brutos salvos contém a maior gama possível de variáveis. 
