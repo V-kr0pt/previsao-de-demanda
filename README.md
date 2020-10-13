@@ -3,8 +3,10 @@ Repositório para o desenvolvimento dos programas para previsão de demanda de p
 
 #### A organização das pastas
 
--  Dados: Todos os dados utilizados para criar os dataframes)
-- Jupyter: Todos os códigos feitos no Jupyter Notebook (Visualmente melhor de compreender)
-- Spyder: Todos os códigos feitos utilizando a IDE Spyder
+- Na pasta **Dados** é aonde se encontra os dados utilizados para criar os dataframes
 
-  Normalmente, construo os códigos utilizando o Spyder e só então passo para o Jupyter Notebook deixando-os mais comentados e visualmente compreensíveis.
+- Na pasta **Notebooks** podemos encontrar os códigos feitos utilizando Notebooks. 
+
+  
+
+  Até o presente momento no projeto foi unicamente utilizado os Notebooks como ferramenta para construção dos códigos, porém a existência da pasta é devido à previsão de que para alguns scripts o Notebook não seja a melhor ferramenta a ser utilizada. 
