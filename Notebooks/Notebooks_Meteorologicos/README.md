@@ -5,6 +5,7 @@
   * [Site INMET](#site-inmet)
     + [Caminho escolhido para acessar os dados](#caminho-escolhido-para-acessar-os-dados)
     + [Detalhes da escolha](#detalhes-da-escolha)
+  * [Gráficos](#gr-ficos)
 
 ## Resumo
 
