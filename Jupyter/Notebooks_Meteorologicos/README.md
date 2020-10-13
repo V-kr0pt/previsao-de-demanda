@@ -10,7 +10,7 @@
 
 ​	Nos códigos referentes aos Dados Metereológicos tivemos como objetivo visualizar os dados de temperatura, chuva, radiação solar e velocidade do vento, apresentando o máximo diário e semanal por ano, de 2008 até 2013.  ( Algumas outras informações além dos máximos, também foram apresentadas graficamente para averiguarmos a utilidade delas. Se for desejado, retiro.)  
 
-## Site INMET
+## Coleta de Dados (INMET)
 
 ​	O primeiro passo para alcançar o objetivo foi o de explorar o [site do Instituto Nacional  de Meteorologia (INMET)](https://portal.inmet.gov.br/ "site do INMET") para ver a melhor forma de se obter os dados meteorológicos de João Pessoa no intervalo de tempo do dia 01 de janeiro de 2008 até 31 de dezembro de 2013.
 
@@ -51,7 +51,7 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 - Variáveis dos Dados Horários	
 
-######   <img src="./imagensdoreadme/var_dados_horarios.png" alt="var_dados_horarios" style="zoom:80%;" />
+######   <img src="./imagensdoreadme/var_dados_horarios.png" alt="var_dados_horarios" style="zoom: 67%;" />
 
 ​	Pode-se ver uma ampla quantidade de variáveis coletadas nos Dados Horários, inclusive a Radiação Global (Radiação Solar) 
 
@@ -59,10 +59,16 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 - Variáveis dos Dados Diários 
 
-###### <img src="./imagensdoreadme/var_dados_diarios.png" alt="var_dados_diarios" style="zoom:80%;" />
+###### <img src="./imagensdoreadme/var_dados_diarios.png" alt="var_dados_diarios" style="zoom: 67%;" />
 
 
 
 ​	Quanto as variáveis dos Dados Diários conseguimos perceber que algumas das variáveis presentes nos Dados Horários não estão presentes. 
 
 ​	Em ambos foi marcado a opção de selecionar todas as variáveis para download, assim os dados brutos salvos contém a maior gama possível de variáveis. 
+
+
+
+## Gráficos
+
+​	Após a coleta dos Dados foram criados gráficos utilizando o Jupyter Notebook, os códigos foram separados em dois um para obter os gráficos [diários](https://github.com/V-kr0pt/previsao-de-demanda/blob/main/Jupyter/Notebooks_Meteorologicos/Dados_Meteorologicos_Diarios.ipynb) e outro para obter os gráficos [semanais](https://github.com/V-kr0pt/previsao-de-demanda/blob/main/Jupyter/Notebooks_Meteorologicos/Dados_Meteorologicos_Semanais.ipynb), que estão o mais comentado que consegui fazer.
