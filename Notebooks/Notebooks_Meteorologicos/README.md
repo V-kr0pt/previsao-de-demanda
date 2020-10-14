@@ -109,15 +109,15 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 ##### Temperatura
 
-![Temperatura](/home/kr0pt/Documents/Pesquisa/Codes/previsao-de-demanda/Notebooks/Notebooks_Meteorologicos/Plots/Semanais/Temperatura.png)
+![Temperatura](./Plots/Semanais/Temperatura.png)
 
 ##### Vento
 
-![Vento](/home/kr0pt/Documents/Pesquisa/Codes/previsao-de-demanda/Notebooks/Notebooks_Meteorologicos/Plots/Semanais/Vento.png)
+![Vento](./Plots/Semanais/Vento.png)
 
 ##### Chuvas
 
-![Chuva](/home/kr0pt/Documents/Pesquisa/Codes/previsao-de-demanda/Notebooks/Notebooks_Meteorologicos/Plots/Semanais/Chuva.png)
+![Chuva](./Plots/Semanais/Chuva.png)
 
 ##### 
 
