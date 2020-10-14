@@ -1,8 +1,10 @@
 # Notebooks Dados Metereológicos
 
+
+
 - [Notebooks Dados Metereológicos](#notebooks-dados-metereol-gicos)
   * [Resumo](#resumo)
-  * [Site INMET](#site-inmet)
+  * [Coleta de Dados (INMET)](#coleta-de-dados--inmet-)
     + [Caminho escolhido para acessar os dados](#caminho-escolhido-para-acessar-os-dados)
     + [Detalhes da escolha](#detalhes-da-escolha)
   * [Gráficos](#gr-ficos)
@@ -52,7 +54,7 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 - Variáveis dos Dados Horários	
 
-######   <img src="./imagensdoreadme/var_dados_horarios.png" alt="var_dados_horarios" style="zoom: 67%;" />
+<img src="./imagensdoreadme/var_dados_horarios.png" alt="var_dados_horarios" style="zoom: 67%;" />
 
 ​	Pode-se ver uma ampla quantidade de variáveis coletadas nos Dados Horários, inclusive a Radiação Global (Radiação Solar) 
 
@@ -60,7 +62,7 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 - Variáveis dos Dados Diários 
 
-###### <img src="./imagensdoreadme/var_dados_diarios.png" alt="var_dados_diarios" style="zoom: 67%;" />
+<img src="./imagensdoreadme/var_dados_diarios.png" alt="var_dados_diarios" style="zoom: 67%;" />
 
 
 
