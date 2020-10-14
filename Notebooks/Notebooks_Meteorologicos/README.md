@@ -111,13 +111,17 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 ![Temperatura](./Plots/Semanais/Temperatura.png)
 
+​	É possível ver o problema de mensuração no ano de 2012. Ainda, em 2013  conseguimos reparar alguns dados faltantes da semana 24 até a semana 27 (Número exato da semana confirmado ao fim).  Verificaremos ao longo dos outros gráficos que esse é um comportamento  que se repete.
+
 ##### Vento
 
 ![Vento](./Plots/Semanais/Vento.png)
+
+Ano de 2012 apresenta o mesmo erro já observado e no intervalo da semana 24 até semana 27 de 2013 encontram-se no dados faltantes.
 
 ##### Chuvas
 
 ![Chuva](./Plots/Semanais/Chuva.png)
 
-##### 
+​	Como visto anteriormente percebemos a anormalidade nos dados  referentes ao ano de 2012 e no intervalo específico entre a semana 24 e a semana 27, porém nesse caso ao invés de serem dados faltantes são registros de 0 mm de pluviosidade
 
