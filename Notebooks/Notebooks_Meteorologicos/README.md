@@ -79,17 +79,31 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 ![Temperatura](./Plots/Diarios/Temperatura.png)
 
+​	
+
+​	Podemos notar alguns dados faltantes em 2010 e fica explícito que em quase todo o ano de 2012 ocorreu algum problema na mensuração.  Ainda, em 2013 conseguimos reparar alguns dados faltantes próximo ao mês 07, mais precisamente do dia 19/06 até o dia 15/07 (tabela ao fim). 
+
+​	Verificaremos ao longo dos outros  gráficos que esse é um comportamento se repete, ou seja, não é um  problema unicamente na mensuração dessa variável, mas sim em todas.
+
 ##### Vento
 
 ![Ventos](./Plots/Diarios/Ventos.png)
+
+​	Podemos verificar que os dados faltantes da velocidade do vento  estão em intervalos iguais ou muito próximos dos dados faltantes da  variável temperatura
 
  ##### Chuvas
 
 ![Chuvas](./Plots/Diarios/Chuvas.png)
 
+​	Os anos de 2012, 2010 e 2013 dos gráficos de chuvas, explicitam que nos intervalos em que as outras variáveis apresentam dados faltantes, os dados de chuvas registram precipitação de 0mm. O que torna mais complicado de analisar, visto que podem existir dias em que a  precipitação foi de 0mm e outros em que na verdade foram ocasionados de falhas na medição.
+
 ##### Radiação Solar
 
 ![Radiacao](./Plots/Diarios/Radiacao.png)
+
+​	Podemos verificar que além dos dados faltantes nos intervalos  mencionados em outras variáveis a radiação apresenta um comportamento  atípico no ano de 2010, entre o mês 06 e mês 10.
+
+
 
 #### Gráficos Semanais
 
