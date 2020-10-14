@@ -74,4 +74,4 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 ## Gráficos
 
-​	Após a coleta dos Dados foram criados gráficos utilizando o Jupyter Notebook, os códigos foram separados em dois um para obter os gráficos [diários](https://github.com/V-kr0pt/previsao-de-demanda/blob/main/Jupyter/Notebooks_Meteorologicos/Dados_Meteorologicos_Diarios.ipynb) e outro para obter os gráficos [semanais](https://github.com/V-kr0pt/previsao-de-demanda/blob/main/Jupyter/Notebooks_Meteorologicos/Dados_Meteorologicos_Semanais.ipynb), que estão o mais comentado que consegui fazer.
+​	Após a coleta dos Dados foram criados gráficos utilizando o Jupyter Notebook, os códigos foram separados em dois um para obter os gráficos [diários](https://github.com/V-kr0pt/previsao-de-demanda/blob/main/Notebooks/Notebooks_Meteorologicos/Dados_Meteorologicos_Diarios.ipynb) e outro para obter os gráficos [semanais](https://github.com/V-kr0pt/previsao-de-demanda/blob/main/Notebooks/Notebooks_Meteorologicos/Dados_Meteorologicos_Semanais.ipynb), que estão o mais comentado que consegui fazer.
