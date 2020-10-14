@@ -1,13 +1,6 @@
 # Notebooks Dados Metereológicos
 
-
-
-- [Notebooks Dados Metereológicos](#notebooks-dados-metereol-gicos)
-  * [Resumo](#resumo)
-  * [Coleta de Dados (INMET)](#coleta-de-dados--inmet-)
-    + [Caminho escolhido para acessar os dados](#caminho-escolhido-para-acessar-os-dados)
-    + [Detalhes da escolha](#detalhes-da-escolha)
-  * [Gráficos](#gr-ficos)
+[toc]
 
 ## Resumo
 
@@ -74,4 +67,43 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 ## Gráficos
 
-​	Após a coleta dos Dados foram criados gráficos utilizando o Jupyter Notebook, os códigos foram separados em dois um para obter os gráficos [diários](https://github.com/V-kr0pt/previsao-de-demanda/blob/main/Notebooks/Notebooks_Meteorologicos/Dados_Meteorologicos_Diarios.ipynb) e outro para obter os gráficos [semanais](https://github.com/V-kr0pt/previsao-de-demanda/blob/main/Notebooks/Notebooks_Meteorologicos/Dados_Meteorologicos_Semanais.ipynb), que estão o mais comentado que consegui fazer.
+​	Após a coleta dos Dados foram criados gráficos utilizando o Jupyter Notebook. Os códigos foram separados em dois, sendo um para obter os gráficos diários e outro para obter os gráficos semanais. Ambos podem ser acessado no início dessa página.
+
+### Apresentação dos Plots
+
+​	Os gráficos foram divididos para que em cada Figure se encontrasse os plots referentes a variável desejada (Temperatura, Vento, Chuva, Radiação Solar) divididos em subplots que representam os anos.
+
+#### Gráficos Diários
+
+##### Temperatura
+
+![Temperatura](./Plots/Diarios/Temperatura.png)
+
+##### Vento
+
+![Ventos](./Plots/Diarios/Ventos.png)
+
+ ##### Chuvas
+
+![Chuvas](./Plots/Diarios/Chuvas.png)
+
+##### Radiação Solar
+
+![Radiacao](./Plots/Diarios/Radiacao.png)
+
+#### Gráficos Semanais
+
+##### Temperatura
+
+
+
+##### Vento
+
+
+
+##### Chuvas
+
+
+
+##### Radiação Solar
+
