@@ -1,5 +1,5 @@
 # previsao-de-demanda
-Repositório para o desenvolvimento dos programas para previsão de demanda de potência elétrica, PIBIC-Cnpq
+Repositório para o desenvolvimento dos programas para previsão de demanda de energia elétrica, PIBIC-Cnpq
 
 #### A organização das pastas
 
