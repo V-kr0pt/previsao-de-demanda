@@ -422,3 +422,21 @@ Ano de 2012 apresenta o mesmo erro já observado e no intervalo da semana 24 at�
 | 50     | False                          | False                           | False                           | False                            | False                              | False                                 |
 | 51     | False                          | False                           | False                           | False                            | False                              | False                                 |
 
+
+
+### Observações
+
+​	A respeito da questão de quantas semanas um ano tem, é possível verificar que realmente possuem 52 semanas na maior parte do tempo, porém alguns anos possuem 53.  
+
+​	Para explicar o porquê disto acontecer é necessário saber que todo ano não-bissexto inicia e termina no mesmo dia da semana, por outro lado, anos bissextos terminam no dia da semana logo após do dia da semana em que começaram.
+
+Exemplo:
+
+- 2018, ano não-bissexto, o dia 01/01/2018 foi uma segunda-feira e o dia 31/12/2018 também o foi uma segunda-feira.
+
+-  2019, ano não-bissexto, o dia 01/01/2019 foi uma terça-feira e o dia 31/12/2019 também foi uma terça-feira.
+- 2020, ano bissexto, o dia 01/01/2020 foi uma quarta-feira e o dia 31/12/2020 foi uma quinta-feira  
+
+​	
+
+​	Acontece que, considerando o início da semana o domingo e contabilizando a semana no ano em que ela começou, os anos que iniciarem em um domingo ou os anos que iniciarem em um sábado e forem bissextos terão na nossa contagem 53 semanas.
