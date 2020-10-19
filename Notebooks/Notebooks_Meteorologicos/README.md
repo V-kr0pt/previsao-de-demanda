@@ -283,7 +283,7 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 ![Temperatura](./Plots/Semanais/Temperatura.png)
 
-​	É possível ver o problema de mensuração no ano de 2012. Ainda, em 2013  conseguimos reparar alguns dados faltantes da semana 24 até a semana 27 (Número exato da semana confirmado ao fim).  Verificaremos ao longo dos outros gráficos que esse é um comportamento  que se repete.
+​	É possível ver o problema de mensuração no ano de 2012. Ainda, em 2013 conseguimos reparar alguns dados faltantes da semana 24 até a semana 27 (Número exato da semana confirmado ao fim).  Verificaremos ao longo dos outros gráficos que esse é um comportamento que se repete.
 
 ##### Vento
 
@@ -296,4 +296,129 @@ Ano de 2012 apresenta o mesmo erro já observado e no intervalo da semana 24 at�
 ![Chuva](./Plots/Semanais/Chuva.png)
 
 ​	Como visto anteriormente percebemos a anormalidade nos dados  referentes ao ano de 2012 e no intervalo específico entre a semana 24 e a semana 27, porém nesse caso ao invés de serem dados faltantes são registros de 0 mm de pluviosidade
+
+#### Tabelas Semanais
+
+​	Da mesma maneira que as tabelas diárias, a partir dos gráficos foi analisado os intervalos de dados faltantes e utilizando o Jupyter Notebook para criar as tabelas em que **True** representa dado de pluviosidade igual a 0mm para precipitação total e para as outras variáveis dados faltante, enquanto **False** representa o contrário, ou seja, dados existentes e precipitação diferente de 0mm. 
+
+##### Ano de 2012
+
+​	Para o ano de 2012 foi criado uma tabela com todas as semanas do ano, a partir disso é possível analisar que da semana 7 até a semana 50, os dados são inconsistentes. Ainda, é interessante verificar que o ano de 2012 foi comporto por 53 semanas.   
+
+| semana | TEMPERATURA MEDIA SEMANAL (°C) | TEMPERATURA MAXIMA SEMANAL (°C) | TEMPERATURA MINIMA SEMANAL (°C) | PRECIPITACAO TOTAL, SEMANAL (mm) | VENTO, RAJADA MAXIMA SEMANAL (m/s) | VENTO, VELOCIDADE MEDIA SEMANAL (m/s) |
+| ------ | ------------------------------ | ------------------------------- | ------------------------------- | -------------------------------- | ---------------------------------- | ------------------------------------- |
+| 0      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 1      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 2      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 3      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 4      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 5      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 6      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 7      | True                           | False                           | False                           | True                             | False                              | True                                  |
+| 8      | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 9      | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 10     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 11     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 12     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 13     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 14     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 15     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 16     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 17     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 18     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 19     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 20     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 21     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 22     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 23     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 24     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 25     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 26     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 27     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 28     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 29     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 30     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 31     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 32     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 33     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 34     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 35     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 36     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 37     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 38     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 39     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 40     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 41     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 42     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 43     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 44     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 45     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 46     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 47     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 48     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 49     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 50     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 51     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 52     | False                          | False                           | False                           | False                            | False                              | False                                 |
+
+
+
+##### Ano de 2013
+
+​	Para o ano de 2013 também foi criada uma tabela com todos as semanas do ano, com isso foi possível verificar que da semana 24 até a 27 pode-se encontrar inconsistência nos dados.
+
+| semana | TEMPERATURA MEDIA SEMANAL (°C) | TEMPERATURA MAXIMA SEMANAL (°C) | TEMPERATURA MINIMA SEMANAL (°C) | PRECIPITACAO TOTAL, SEMANAL (mm) | VENTO, RAJADA MAXIMA SEMANAL (m/s) | VENTO, VELOCIDADE MEDIA SEMANAL (m/s) |
+| ------ | ------------------------------ | ------------------------------- | ------------------------------- | -------------------------------- | ---------------------------------- | ------------------------------------- |
+| 0      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 1      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 2      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 3      | False                          | False                           | False                           | True                             | False                              | False                                 |
+| 4      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 5      | False                          | False                           | False                           | True                             | False                              | False                                 |
+| 6      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 7      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 8      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 9      | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 10     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 11     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 12     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 13     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 14     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 15     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 16     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 17     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 18     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 19     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 20     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 21     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 22     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 23     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 24     | True                           | False                           | False                           | False                            | False                              | True                                  |
+| 25     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 26     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 27     | True                           | True                            | True                            | True                             | True                               | True                                  |
+| 28     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 29     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 30     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 31     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 32     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 33     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 34     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 35     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 36     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 37     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 38     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 39     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 40     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 41     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 42     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 43     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 44     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 45     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 46     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 47     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 48     | False                          | False                           | False                           | True                             | False                              | False                                 |
+| 49     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 50     | False                          | False                           | False                           | False                            | False                              | False                                 |
+| 51     | False                          | False                           | False                           | False                            | False                              | False                                 |
 
