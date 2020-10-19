@@ -97,7 +97,7 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 ![Chuvas](./Plots/Diarios/Chuvas.png)
 
-​	Os anos de 2012, 2010 e 2013 dos gráficos de chuvas, explicitam que nos intervalos em que as outras variáveis apresentam dados faltantes, os dados de chuvas registram precipitação de 0mm. O que amplia a dificuldade de análise, visto que podem existir dias em que a  precipitação foi realmente de 0mm e outros em que foram dados ocasionados por falhas na medição.
+​	Os anos de 2010, 2012 e 2013 dos gráficos de chuvas, explicitam que nos intervalos em que as outras variáveis apresentam dados faltantes, os dados de chuvas registram precipitação de 0mm. O que amplia a dificuldade de análise, visto que podem existir dias em que a  precipitação foi realmente de 0mm e outros em que foram dados ocasionados por falhas na medição.
 
 ##### Radiação Solar
 
@@ -170,7 +170,7 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 ##### Ano de 2012
 
-​	Foram criadas duas tabela para análise do ano de 2012 que tornassem possível observar o dia inicial e final em que  os dados são inconsistentes (R: 14/02/2012 até o dia 12/10/2012 os dados são inconsistentes).
+​	Foram criadas duas tabela para análise do ano de 2012 que tornassem possível observar o dia inicial e final em que  os dados são inconsistentes (R: 14/02/2012 até o dia 10/12/2012 os dados são inconsistentes).
 
 ​	Analisando o início dos dados faltantes, é possível verificar que a partir do 14/02/2012 os dados são inconsistentes:
 
@@ -225,7 +225,7 @@ Após isso é aberto uma página que torna possível a escolha por:
 
 ##### Ano de 2013
 
-​	Para o ano de 2013 também foram criadas duas tabelas para averiguar o início e fim das incosistências dos dados (R: 19/06/2013 até o dia 15/07/2013)
+​	Para o ano de 2013 também foram criadas duas tabelas para averiguar o início e fim das incosistências dos dados (R: 19/06/2013 até o dia 14/07/2013)
 
 ​	Podemos observar na primeira tabela que os dados tornam-se faltantes a partir do dia 19/06/2013:  
 
@@ -252,7 +252,7 @@ Após isso é aberto uma página que torna possível a escolha por:
 | 2013-06-28      | True                               | True                           | True                           | True                           | True                                   | True                                | True                                | True                                 |
 | 2013-06-29      | True                               | True                           | True                           | True                           | True                                   | True                                | True                                | True                                 |
 
-​	Ao realizar o corte na tabela, podemos verificar que os dados deixam de ser inconsistentes a partir do dia 15/07/2013:
+​	Ao realizar o corte na tabela, podemos verificar que os dados continuam inconsistentes até o dia 14/07/2013:
 
 | DATA DE MEDIÇÃO | TEMPERATURA MÉDIA DO AR DIARIA(°C) | TEMPERATURA MINIMA DIARIA (°C) | TEMPERATURA MAXIMA DIARIA (°C) | PRECIPITACAO TOTAL, DIARIA(mm) | VELOCIDADE MÉDIA DIÁRIA DO VENTO (m/s) | RAJADA MAXIMA DIARIA DO VENTO (m/s) | RADIACAO SOLAR MÉDIA DIÁRIA (Kj/m²) | RADIACAO SOLAR MÁXIMA DIÁRIA (Kj/m²) |
 | --------------- | ---------------------------------- | ------------------------------ | ------------------------------ | ------------------------------ | -------------------------------------- | ----------------------------------- | ----------------------------------- | ------------------------------------ |
@@ -303,7 +303,7 @@ Ano de 2012 apresenta o mesmo erro já observado e no intervalo da semana 24 at�
 
 ##### Ano de 2012
 
-​	Para o ano de 2012 foi criado uma tabela com todas as semanas do ano, a partir disso é possível analisar que da semana 7 até a semana 50, os dados são inconsistentes. Ainda, é interessante verificar que o ano de 2012 foi comporto por 53 semanas.   
+​	Para o ano de 2012 foi criado uma tabela com todas as semanas do ano, a partir disso é possível analisar que da semana 7 até a semana 49, os dados são inconsistentes. Ainda, é interessante verificar que o ano de 2012 foi comporto por 53 semanas.   
 
 | semana | TEMPERATURA MEDIA SEMANAL (°C) | TEMPERATURA MAXIMA SEMANAL (°C) | TEMPERATURA MINIMA SEMANAL (°C) | PRECIPITACAO TOTAL, SEMANAL (mm) | VENTO, RAJADA MAXIMA SEMANAL (m/s) | VENTO, VELOCIDADE MEDIA SEMANAL (m/s) |
 | ------ | ------------------------------ | ------------------------------- | ------------------------------- | -------------------------------- | ---------------------------------- | ------------------------------------- |
