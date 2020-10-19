@@ -2,6 +2,33 @@
 
 [toc]
 
+- [Notebooks Dados Metereológicos](#notebooks-dados-metereol-gicos)
+  * [Resumo](#resumo)
+  * [Coleta de Dados (INMET)](#coleta-de-dados--inmet-)
+    + [Caminho escolhido para acessar os dados](#caminho-escolhido-para-acessar-os-dados)
+    + [Detalhes da escolha](#detalhes-da-escolha)
+  * [Resultados](#resultados)
+    + [Apresentação dos Gráficos](#apresenta--o-dos-gr-ficos)
+      - [Gráficos Diários](#gr-ficos-di-rios)
+        * [Temperatura](#temperatura)
+        * [Vento](#vento)
+        * [Chuvas](#chuvas)
+        * [Radiação Solar](#radia--o-solar)
+      - [Tabelas Diárias](#tabelas-di-rias)
+        * [Ano de 2010](#ano-de-2010)
+        * [Ano de 2012](#ano-de-2012)
+        * [Ano de 2013](#ano-de-2013)
+      - [Gráficos Semanais](#gr-ficos-semanais)
+        * [Temperatura](#temperatura-1)
+        * [Vento](#vento-1)
+        * [Chuvas](#chuvas-1)
+      - [Tabelas Semanais](#tabelas-semanais)
+        * [Ano de 2012](#ano-de-2012-1)
+        * [Ano de 2013](#ano-de-2013-1)
+    + [Observações](#observa--es)
+  * [And a table of contents](#and-a-table-of-contents)
+  * [On the right](#on-the-right)
+
 ## Resumo
 
 ​	Nos códigos referentes aos Dados Metereológicos tivemos como objetivo visualizar os dados de temperatura, chuva, radiação solar e velocidade do vento, apresentando o máximo diário e semanal por ano, de 2008 até 2013.  ( Algumas outras informações além dos máximos, também foram apresentadas graficamente para averiguarmos a utilidade delas. Se for desejado, retiro.)  
@@ -437,6 +464,4 @@ Exemplo:
 -  2019, ano não-bissexto, o dia 01/01/2019 foi uma terça-feira e o dia 31/12/2019 também foi uma terça-feira.
 - 2020, ano bissexto, o dia 01/01/2020 foi uma quarta-feira e o dia 31/12/2020 foi uma quinta-feira  
 
-​	
-
-​	Acontece que, considerando o início da semana o domingo e contabilizando a semana no ano em que ela começou, os anos que iniciarem em um domingo ou os anos que iniciarem em um sábado e forem bissextos terão na nossa contagem 53 semanas.
+​	Considerando o início da semana o domingo e contabilizando a semana no ano em que ela começou, os anos que iniciarem em um domingo ou os anos que iniciarem em um sábado e forem bissextos terão na nossa contagem 53 semanas.
