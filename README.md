@@ -9,4 +9,3 @@ Repositório para o desenvolvimento dos scripts para previsão de demanda de ene
 
   
 
-  Até o presente momento no projeto foi unicamente utilizado os Notebooks como ferramenta para construção dos códigos, porém a existência da pasta é devido à previsão de que para alguns scripts o Notebook não seja a melhor ferramenta a ser utilizada. 
