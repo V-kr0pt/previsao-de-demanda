@@ -451,7 +451,7 @@ Ano de 2012 apresenta o mesmo erro já observado e no intervalo da semana 24 at�
 
 ### Observações
 
-​	A respeito da questão de quantas semanas um ano tem, é possível verificar que realmente possuem 52 semanas na maior parte do tempo, porém alguns anos possuem 53.  
+​	A respeito da questão de quantas semanas existem em um ano, é possível verificar que realmente possuem 52 semanas por padrao, porém alguns anos possuem 53.  
 
 ​	Para explicar o porquê disto acontecer é necessário saber que todo ano não-bissexto inicia e termina no mesmo dia da semana, por outro lado, anos bissextos terminam no dia da semana logo após do dia da semana em que começaram.
 
