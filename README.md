@@ -9,3 +9,14 @@ Repositório para o desenvolvimento dos scripts para previsão de demanda de ene
 
   
 
+# previsao-de-demanda
+Repository for the development of scripts for demand forecasting, PIBIC-Cnpq
+
+#### The organization of the folders
+
+- In the [Dados](https://github.com/V-kr0pt/previsao-de-demanda/tree/main/Dados "Click to access the folder")  folder is where you will find the data used to create the dataframes
+
+- In the [Notebooks](https://github.com/V-kr0pt/previsao-de-demanda/tree/main/Notebooks "Click to access the folder") folder is where you can find the codes made using Notebooks. 
+
+  
+
